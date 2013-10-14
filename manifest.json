@@ -1,0 +1,13 @@
+{
+  "name": "NicoNewMovieBackgroundChanger",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "ニコニコのマイページで、新しく投稿された動画に関するニコレポの背景色を変える。",
+  "content_scripts": [
+    {
+      "matches": ["http://www.nicovideo.jp/my/top*", "http://www.nicovideo.jp/user/*"],
+      "js": ["jquery.min.js","script.js"],
+	  "run_at": "document_start"
+    }
+  ]
+}
